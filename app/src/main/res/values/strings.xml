@@ -5,7 +5,15 @@
     <string name="club_logo_desc">club logo</string>
     <string name="start_button_text">Get Started</string>
 
-    <!-- Second activity class-->
+    <!-- Second activity-->
     <string name="selectSeasonString">Select current season</string>
-    <string name="newSeasonButtonString">New season</string>
+    <string name="newSeasonButtonString">New Season</string>
+
+    <!-- Season setup activity-->
+    <string name="newSeasonString">Enter season name</string>
+    <string name="createNewSeasonString">Create new season</string>
+    <string name="newSeasonSwitch">Season Created:  </string>
+    <string name="transitionToSeasonInit">Now, you can setup data about this season such as
+    game elements, point systems, and questions for pit scouting.</string>
+    <string name="goToSeasonInitButton">Continue to season setup</string>
 </resources>
