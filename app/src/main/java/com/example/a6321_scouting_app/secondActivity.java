@@ -12,14 +12,15 @@ import java.util.Random;
 
 public class secondActivity extends AppCompatActivity
 {
-    private static final String TOTAL_COUNT = "total_count";
+    //private static final String TOTAL_COUNT = "total_count";
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        showRandomNumber();
     }
 
+    /*
     public void showRandomNumber()
     {
         TextView randomView = (TextView)findViewById(R.id.textview_random);
@@ -32,5 +33,5 @@ public class secondActivity extends AppCompatActivity
 
         randomView.setText(Integer.toString(randomInt));
         headingView.setText(getString(R.string.random_heading,count));
-    }
+    } */
 }

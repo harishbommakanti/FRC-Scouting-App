@@ -10,14 +10,30 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
-    private static final String TOTAL_COUNT = "total_count";
+    //private static final String TOTAL_COUNT = "total_count";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void toastMe(View view)
+    public void toSelectSeason(View view)
+    {
+        Intent randomIntent = new Intent(this, secondActivity.class);
+        startActivity(randomIntent);
+    }
+
+    /*public void randomMe(View view)
+    {
+        Intent randomIntent = new Intent(this, secondActivity.class);
+        TextView showCountTextView = (TextView)findViewById(R.id.textView2);
+        String countString = showCountTextView.getText().toString();
+        int count = Integer.parseInt(countString);
+        randomIntent.putExtra(TOTAL_COUNT,count);
+        startActivity(randomIntent);
+    }/*
+
+    /*public void toastMe(View view)
     {
         Toast myToast = Toast.makeText(this, "hello Toast!",
                 Toast.LENGTH_SHORT);
@@ -32,14 +48,5 @@ public class MainActivity extends AppCompatActivity
         count++;
         showCountTextView.setText(count.toString());
     }
-
-    public void randomMe(View view)
-    {
-        Intent randomIntent = new Intent(this, secondActivity.class);
-        TextView showCountTextView = (TextView)findViewById(R.id.textView);
-        String countString = showCountTextView.getText().toString();
-        int count = Integer.parseInt(countString);
-        randomIntent.putExtra(TOTAL_COUNT,count);
-        startActivity(randomIntent);
-    }
+*/
 }
